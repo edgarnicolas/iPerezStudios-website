@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "./components/Home.vue";
+import HomeView from "./components/HomeView.vue";
 import AboutUs from "./components/AboutUs.vue";
-import Contact from "./components/Contact.vue";
-import Gallery from "./components/Gallery.vue";
+import ContactUs from "./components/ContactUs.vue";
+import PhotoGallery from "./components/PhotoGallery.vue";
 
 const routes =[
-    {path: '/', component: Home},
-    {path: '/gallery', component: Gallery},
+    {path: '/', component: HomeView},
+    {path: '/gallery', component: PhotoGallery},
     {path: '/aboutus', component: AboutUs},
-    {path: '/contact', component: Contact},
+    {path: '/contact', component: ContactUs},
 ];
 
 const router = createRouter(
